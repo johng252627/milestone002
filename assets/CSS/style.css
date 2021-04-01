@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Train+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2edce;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65%;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+ul > li {
+    list-style: none;
+}
+
+.card,
+.reset-btn {
+    cursor: pointer;
+}
+ .btn{
+     border-radius: 1em;
+     border: none;
+     color: #6ff27f;
+     padding: 0.8em;
+ }
+
+ h1 {
+     font-size: 3em;
+     font-family: "Train One", sans-serif;
+ }
+
+ h3 {
+     font-size: 2.5em;
+     font-family: "Montserrat", sans-serif;
+ }
+
+ p {
+     font-size: 1.6 em;
+     font-family: "Montserrat", sans-serif;
+ }
+
+ .move-tracker {
+     font-size: 1.4em;
+     padding: 1em 0 2em;
+     font-family: "Montserrat", sans-serif;
+ }
+
+ .rating > li {
+    display: inline-block;
+    padding: 0.5em;
+ }
+
+ .moves {
+     padding 0.5em;
+ }
+
+ .modal {
+     display: none;
+     position: fixed;
+     z-index: 99;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 10%;
+     background-color: #e8a2f2;
+ }
+
+ .modal-content {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #fff;
+     margin: 5% auto;
+     border: 0.8em solid #e8a2f2;
+     padding-right: 2em;
+     width: 80%;
+ }
+
+ .close {
+     align-self: flex-end;
+     color: #6ff27f;
+     font-size: 5em;
+ }
+
+ .close:hover {
+     color: #13ed34;
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ p.stats {
+     font-weight: 600;
+ }
+
+ p.stats:last-child {
+     margin-bottom: 1em;
+ }
+
+ .play-again-btn {
+     background: #6ff27f;
+     margin-bottom: 1em;
+ }
+
+ .deck-of-cards {
+     background: #faf7ed;
+     border-radius: 1.5em;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+     height: 35em;
+     margin-bottom: 6em;
+     padding: 0.5em;
+     width: 35em;
+ }
+
+ .card {
+    background: #ffc80f;
+    border-radius: 0.5em;
+    height: 7em;
+    width: 7em;
+ }
+
+ img {
+     user-select: none;
+     width: 6em;
+ }
+
+ .deck img {
+     visibility: hidden;
+ }
+
+ .deck .card.flip {
+     background: #fff;
+     transform: rotateY(180deg);
+     transition: transform 0.5s linear;
+ }
+
+ .flip img {
+     background: #fff;
+     visibility: visible;
+ }
+
+ .deck .card.match {
+     visibility: visible;
+ }
+
+@media screen and (min-width: 481px) {
+    .deck {
+        height: 50em;
+        padding: 2em;
+        width: 50em;
+    }
+    .card {
+        height: 10em;
+        width: 10em;
+    }
+    .deck img {
+        width: 9em;
+    }
+    .modal-content h3 {
+        font-size: 4em;
+    }
+    .play-again-btn {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 6em;
+    }
+    p {
+        font-size: 2.3em;
+    }
+    .deck {
+        height: 70em;
+        width: 70em;
+    }#
+    .card {
+        height: 15em;
+        width: 15em;
+    }
+    .deck img {
+        width: 13em;
+    }
+    .reset-btn {
+        font-size: 0.8em;
+    }
+    .footer {
+        font-size: 1.2em;
+    }
+    .modal-content h3 {
+        font-size: 5em;
+    }
+    .play-again-btn {
+        font-size: 2em;
+    }
+}
